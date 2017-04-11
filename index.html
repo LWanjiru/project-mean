@@ -7,9 +7,9 @@
   </head>
   <!-- create controller -->
   <body ng-app="flapperNews" ng-controller="MainCtrl">
-    <div>
-      <!-- declare variable 'test' and display its content using AngularJS{{}} notation-->
-      {{test}}
+    <div ng-repeat="post in posts">
+      <!-- declare variable 'post' and display its content using AngularJS{{}} notation-->
+      {{post.title}} - upvotes: {{post.upvotes}}
     </div>
   </body>
 </html>
